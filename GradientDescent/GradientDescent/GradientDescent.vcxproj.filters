@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Unary Operation Sources">
+      <UniqueIdentifier>{620d7458-c996-4b91-93ee-67284c956bf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Unary Operation Headers">
+      <UniqueIdentifier>{e6bcf4c3-2fa9-4eab-ae93-aa02ce3988ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Binary Operation Headers">
+      <UniqueIdentifier>{0556128a-d72d-47ed-bc6f-f144dafef4d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Binary Operation Sources">
+      <UniqueIdentifier>{475428fb-ba4c-4177-92f6-a26024ae5f78}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -30,12 +42,63 @@
     <ClInclude Include="timer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AbstractOperation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UnaryOperation.h">
+      <Filter>Header Files\Unary Operation Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sin.h">
+      <Filter>Header Files\Unary Operation Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Add.h">
+      <Filter>Header Files\Binary Operation Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryOperation.h">
+      <Filter>Header Files\Binary Operation Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Constant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Variable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Operations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GradientDescent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractOperation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sin.cpp">
+      <Filter>Source Files\Unary Operation Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="UnaryOperation.cpp">
+      <Filter>Source Files\Unary Operation Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryOperation.cpp">
+      <Filter>Source Files\Binary Operation Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Add.cpp">
+      <Filter>Source Files\Binary Operation Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Constant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Variable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
