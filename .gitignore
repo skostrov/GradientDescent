@@ -26,3 +26,17 @@
 *.exe
 *.out
 *.app
+
+#Other
+*.ilk
+*.pdb
+*.log
+*.tlog
+*.lastbuildstate
+*.idb
+*.opensdf
+*.sdf
+*.orig
+*.suo
+*.user
+*.old
