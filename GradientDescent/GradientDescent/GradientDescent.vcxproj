@@ -83,11 +83,18 @@
     <ClInclude Include="Add.h" />
     <ClInclude Include="BinaryOperation.h" />
     <ClInclude Include="Constant.h" />
+    <ClInclude Include="Cos.h" />
+    <ClInclude Include="Cotang.h" />
+    <ClInclude Include="Div.h" />
     <ClInclude Include="headers.h" />
+    <ClInclude Include="Mul.h" />
+    <ClInclude Include="NLog.h" />
     <ClInclude Include="Operations.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Sin.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Sub.h" />
+    <ClInclude Include="Tang.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="timer.h" />
     <ClInclude Include="UnaryOperation.h" />
@@ -98,13 +105,20 @@
     <ClCompile Include="Add.cpp" />
     <ClCompile Include="BinaryOperation.cpp" />
     <ClCompile Include="Constant.cpp" />
+    <ClCompile Include="Cos.cpp" />
+    <ClCompile Include="Cotang.cpp" />
+    <ClCompile Include="Div.cpp" />
     <ClCompile Include="GradientDescent.cpp" />
+    <ClCompile Include="Mul.cpp" />
+    <ClCompile Include="NLog.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Sin.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Sub.cpp" />
+    <ClCompile Include="Tang.cpp" />
     <ClCompile Include="UnaryOperation.cpp" />
     <ClCompile Include="Variable.cpp" />
   </ItemGroup>

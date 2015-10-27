@@ -60,14 +60,35 @@
     <ClInclude Include="BinaryOperation.h">
       <Filter>Header Files\Binary Operation Headers</Filter>
     </ClInclude>
-    <ClInclude Include="Constant.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Variable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Operations.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cos.h">
+      <Filter>Header Files\Unary Operation Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Tang.h">
+      <Filter>Header Files\Unary Operation Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Cotang.h">
+      <Filter>Header Files\Unary Operation Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NLog.h">
+      <Filter>Header Files\Unary Operation Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Constant.h">
+      <Filter>Header Files\Unary Operation Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mul.h">
+      <Filter>Header Files\Binary Operation Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Div.h">
+      <Filter>Header Files\Binary Operation Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sub.h">
+      <Filter>Header Files\Binary Operation Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -95,10 +116,31 @@
     <ClCompile Include="Add.cpp">
       <Filter>Source Files\Binary Operation Sources</Filter>
     </ClCompile>
-    <ClCompile Include="Constant.cpp">
+    <ClCompile Include="Variable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Variable.cpp">
+    <ClCompile Include="Cos.cpp">
+      <Filter>Source Files\Unary Operation Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Tang.cpp">
+      <Filter>Source Files\Unary Operation Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Cotang.cpp">
+      <Filter>Source Files\Unary Operation Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="NLog.cpp">
+      <Filter>Source Files\Unary Operation Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Mul.cpp">
+      <Filter>Source Files\Binary Operation Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Div.cpp">
+      <Filter>Source Files\Binary Operation Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Sub.cpp">
+      <Filter>Source Files\Binary Operation Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Constant.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
