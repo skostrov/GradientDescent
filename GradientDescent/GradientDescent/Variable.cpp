@@ -17,8 +17,7 @@ double Variable::Eval(const Point& point) const
 
 	if (pos == point.GetCoordinates().end())
 	{
-		string error = "Identiy " + name + " evaluation failed: index not found!";
-		throw exception(error.c_str());
+		return 0.0;
 	}
 
 	return pos->second;

@@ -60,9 +60,6 @@
     <ClInclude Include="BinaryOperation.h">
       <Filter>Header Files\Binary Operation Headers</Filter>
     </ClInclude>
-    <ClInclude Include="Variable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Operations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -90,6 +87,12 @@
     <ClInclude Include="Sub.h">
       <Filter>Header Files\Binary Operation Headers</Filter>
     </ClInclude>
+    <ClInclude Include="Variable.h">
+      <Filter>Header Files\Unary Operation Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PrecisionConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -116,9 +119,6 @@
     <ClCompile Include="Add.cpp">
       <Filter>Source Files\Binary Operation Sources</Filter>
     </ClCompile>
-    <ClCompile Include="Variable.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Cos.cpp">
       <Filter>Source Files\Unary Operation Sources</Filter>
     </ClCompile>
@@ -141,7 +141,10 @@
       <Filter>Source Files\Binary Operation Sources</Filter>
     </ClCompile>
     <ClCompile Include="Constant.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Unary Operation Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Variable.cpp">
+      <Filter>Source Files\Unary Operation Sources</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -12,6 +12,7 @@ public:
 	virtual ~BinaryOperation();
 
 	double Eval(const Point& point) const override;
+
 	string ToString() const override;
 
 protected:

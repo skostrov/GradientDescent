@@ -15,13 +15,25 @@ const unordered_map<string, double>& Point::GetCoordinates() const
 	return coordinates;
 }
 
+void Point::Insert(const string& varName, double value)
+{
+	coordinates[varName] = value;
+}
+
 Point Point::operator+(const Point& rhv) const
 {
 	Point result;
 
 	for (auto& i : coordinates)
 	{
-		result.coordinates[i.first] = i.second + rhv.coordinates.at(i.first);
+		try
+		{
+			result.coordinates[i.first] = i.second + rhv.coordinates.at(i.first);
+		}
+		catch (out_of_range ex)
+		{
+			continue;
+		}
 	}
 
 	return result;
@@ -33,7 +45,14 @@ Point Point::operator-(const Point& rhv) const
 
 	for (auto& i : coordinates)
 	{
-		result.coordinates[i.first] = i.second - rhv.coordinates.at(i.first);
+		try
+		{
+			result.coordinates[i.first] = i.second - rhv.coordinates.at(i.first);
+		}
+		catch (out_of_range ex)
+		{
+			continue;
+		}
 	}
 
 	return result;
@@ -45,7 +64,14 @@ double Point::operator*(const Point& rhv) const
 
 	for (auto& i : coordinates)
 	{
-		result += i.second * rhv.coordinates.at(i.first);
+		try
+		{
+			result += i.second * rhv.coordinates.at(i.first);
+		}
+		catch (out_of_range ex)
+		{
+			continue;
+		}
 	}
 
 	return result;

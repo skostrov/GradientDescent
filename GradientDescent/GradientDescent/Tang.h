@@ -9,7 +9,7 @@ class Tang : public UnaryOperation
 public:
 
 	Tang(AbstractOperation* operand_);
-	~Tang();
+	~Tang() override;
 
 	double Eval(const Point& point) const override;
 	string ToString() const override;

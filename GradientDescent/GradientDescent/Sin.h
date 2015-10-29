@@ -9,7 +9,7 @@ class Sin : public UnaryOperation
 public:
 
 	Sin(AbstractOperation* operand_);
-	~Sin();
+	~Sin() override;
 
 	double Eval(const Point& point) const override;
 	string ToString() const override;

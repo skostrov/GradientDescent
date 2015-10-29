@@ -91,6 +91,7 @@
     <ClInclude Include="NLog.h" />
     <ClInclude Include="Operations.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="PrecisionConstants.h" />
     <ClInclude Include="Sin.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Sub.h" />

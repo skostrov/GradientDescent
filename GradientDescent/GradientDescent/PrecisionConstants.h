@@ -1,0 +1,1 @@
+const double derStep = 1e-7;

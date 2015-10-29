@@ -12,6 +12,8 @@ public:
 
 	const unordered_map<string, double>& GetCoordinates() const;
 
+	void Insert(const string& varName, double value);
+
 	Point operator+(const Point& rhv) const;
 	Point operator-(const Point& rhv) const;
 	double operator*(const Point& rhv) const;

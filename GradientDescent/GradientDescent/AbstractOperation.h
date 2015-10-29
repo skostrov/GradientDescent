@@ -2,6 +2,7 @@
 
 #include "headers.h"
 #include "Point.h"
+#include "PrecisionConstants.h"
 
 
 class AbstractOperation
@@ -13,6 +14,7 @@ public:
 	virtual ~AbstractOperation();
 
 	virtual double Eval(const Point& point) const = 0;
+	virtual double NumDerivative(const string& varName, const Point& point) const;
 
 	friend ostream& operator << (ostream& os, const AbstractOperation& operation)
 	{

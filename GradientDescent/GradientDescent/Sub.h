@@ -9,7 +9,7 @@ class Sub : public BinaryOperation
 public:
 
 	Sub(AbstractOperation* leftOperand_, AbstractOperation* rightOperand_);
-	~Sub();
+	~Sub() override;
 
 	double Eval(const Point& point) const override;
 	string ToString() const override;

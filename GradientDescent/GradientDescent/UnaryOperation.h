@@ -11,6 +11,7 @@ public:
 	virtual ~UnaryOperation();
 
 	double Eval(const Point& point) const override;
+
 	string ToString() const override;
 
 protected:

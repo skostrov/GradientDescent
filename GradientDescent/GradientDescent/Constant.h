@@ -8,9 +8,10 @@ class Constant : public AbstractOperation
 public:
 
 	Constant(double value_);
-	~Constant();
+	~Constant() override;
 
 	double Eval(const Point& point) const override;
+
 	string ToString() const override;
 
 private:
