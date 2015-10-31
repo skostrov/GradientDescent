@@ -13,6 +13,11 @@ BinaryOperation::~BinaryOperation()
 {
 }
 
+OperationPriority BinaryOperation::GetPriority() const
+{
+	return OperationPriority::AVERAGE;
+}
+
 double BinaryOperation::Eval(const Point& point) const
 {
 	return leftOperand->Eval(point);
@@ -20,5 +25,28 @@ double BinaryOperation::Eval(const Point& point) const
 
 string BinaryOperation::ToString() const
 {
-	return leftOperand->ToString();
+	string result;
+
+	if (leftOperand->GetPriority() < GetPriority())
+	{
+		result += "(" + leftOperand->ToString() + ")";
+	}
+	else
+	{
+		result += leftOperand->ToString();
+	}
+
+	result += " " + name + " ";
+
+	if (rightOperand->GetPriority() < GetPriority())
+	{
+		result += "(" + rightOperand->ToString() + ")";
+	}
+	else
+	{
+		result += rightOperand->ToString();
+	}
+
+	return result;
 }
+

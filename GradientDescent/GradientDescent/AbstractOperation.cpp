@@ -20,7 +20,16 @@ double AbstractOperation::NumDerivative(const string& varName, const Point& poin
 		{
 			h.Insert(varName, derStep);
 		}
+		else
+		{
+			h.Insert(i.first, 0.0);
+		}
 	}
 
-	return (Eval(point + h) - Eval(point - h)) / (2 * derStep);
+	auto tmp1 = Eval(point + h);
+	auto tmp2 = Eval(point - h);
+	auto diff = tmp1 - tmp2;
+
+	return diff / (2.0 * derStep);
+	//return (Eval(point + h) - Eval(point - h)) / (2 * derStep);
 }

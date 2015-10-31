@@ -5,6 +5,13 @@
 #include "PrecisionConstants.h"
 
 
+enum OperationPriority
+{
+	LOW = 1,
+	AVERAGE,
+	HIGH,
+};
+
 class AbstractOperation
 {
 
@@ -12,6 +19,8 @@ public:
 
 	AbstractOperation(const string& name_);
 	virtual ~AbstractOperation();
+
+	virtual OperationPriority GetPriority() const = 0;
 
 	virtual double Eval(const Point& point) const = 0;
 	virtual double NumDerivative(const string& varName, const Point& point) const;

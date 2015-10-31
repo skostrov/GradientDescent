@@ -11,6 +11,11 @@ Variable::~Variable()
 {
 }
 
+OperationPriority Variable::GetPriority() const
+{
+	return OperationPriority::HIGH;
+}
+
 double Variable::Eval(const Point& point) const
 {
 	auto pos = point.GetCoordinates().find(name);

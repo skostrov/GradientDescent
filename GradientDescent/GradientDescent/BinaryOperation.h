@@ -9,7 +9,9 @@ class BinaryOperation : public AbstractOperation
 public:
 
 	BinaryOperation(const string& name_, AbstractOperation* leftOperand_, AbstractOperation* rightOperand_);
-	virtual ~BinaryOperation();
+	virtual ~BinaryOperation() override;
+
+	virtual OperationPriority GetPriority() const override;
 
 	double Eval(const Point& point) const override;
 

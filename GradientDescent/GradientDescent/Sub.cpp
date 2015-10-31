@@ -11,12 +11,12 @@ Sub::~Sub()
 {
 }
 
+OperationPriority Sub::GetPriority() const
+{
+	return OperationPriority::LOW;
+}
+
 double Sub::Eval(const Point& point) const
 {
 	return leftOperand->Eval(point) - rightOperand->Eval(point);
-}
-
-string Sub::ToString() const
-{
-	return leftOperand->ToString() + " - " + rightOperand->ToString();
 }

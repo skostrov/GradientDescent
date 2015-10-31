@@ -10,6 +10,8 @@ public:
 	Constant(double value_);
 	~Constant() override;
 
+	OperationPriority GetPriority() const override;
+
 	double Eval(const Point& point) const override;
 
 	string ToString() const override;

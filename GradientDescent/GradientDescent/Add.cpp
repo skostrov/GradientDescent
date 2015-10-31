@@ -11,12 +11,12 @@ Add::~Add()
 {
 }
 
+OperationPriority Add::GetPriority() const
+{
+	return OperationPriority::LOW;
+}
+
 double Add::Eval(const Point& point) const
 {
 	return leftOperand->Eval(point) + rightOperand->Eval(point);
-}
-
-string Add::ToString() const
-{
-	return leftOperand->ToString() + " + " + rightOperand->ToString();
 }

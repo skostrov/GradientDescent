@@ -11,9 +11,9 @@ public:
 	Add(AbstractOperation* leftOperand_, AbstractOperation* rightOperand_);
 	~Add() override;
 
-	double Eval(const Point& point) const override;
+	virtual OperationPriority GetPriority() const override;
 
-	string ToString() const override;
+	double Eval(const Point& point) const override;
 
 };
 

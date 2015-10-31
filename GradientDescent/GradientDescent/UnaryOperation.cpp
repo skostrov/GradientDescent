@@ -12,6 +12,11 @@ UnaryOperation::~UnaryOperation()
 {
 }
 
+OperationPriority UnaryOperation::GetPriority() const
+{
+	return OperationPriority::HIGH;
+}
+
 double UnaryOperation::Eval(const Point& point) const
 {
 	return operand->Eval(point);

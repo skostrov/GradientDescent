@@ -93,6 +93,9 @@
     <ClInclude Include="PrecisionConstants.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Power.h">
+      <Filter>Header Files\Binary Operation Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -145,6 +148,9 @@
     </ClCompile>
     <ClCompile Include="Variable.cpp">
       <Filter>Source Files\Unary Operation Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Power.cpp">
+      <Filter>Source Files\Binary Operation Sources</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

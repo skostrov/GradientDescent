@@ -91,6 +91,7 @@
     <ClInclude Include="NLog.h" />
     <ClInclude Include="Operations.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="Power.h" />
     <ClInclude Include="PrecisionConstants.h" />
     <ClInclude Include="Sin.h" />
     <ClInclude Include="stdafx.h" />
@@ -113,6 +114,7 @@
     <ClCompile Include="Mul.cpp" />
     <ClCompile Include="NLog.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="Power.cpp" />
     <ClCompile Include="Sin.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

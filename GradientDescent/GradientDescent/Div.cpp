@@ -18,5 +18,27 @@ double Div::Eval(const Point& point) const
 
 string Div::ToString() const
 {
-	return leftOperand->ToString() + " / " + rightOperand->ToString();
+	string result;
+
+	if (leftOperand->GetPriority() <= GetPriority())
+	{
+		result += "(" + leftOperand->ToString() + ")";
+	}
+	else
+	{
+		result += leftOperand->ToString();
+	}
+
+	result += " " + name + " ";
+
+	if (rightOperand->GetPriority() <= GetPriority())
+	{
+		result += "(" + rightOperand->ToString() + ")";
+	}
+	else
+	{
+		result += rightOperand->ToString();
+	}
+
+	return result;
 }

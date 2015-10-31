@@ -15,8 +15,3 @@ double Mul::Eval(const Point& point) const
 {
 	return leftOperand->Eval(point) * rightOperand->Eval(point);
 }
-
-string Mul::ToString() const
-{
-	return leftOperand->ToString() + " * " + rightOperand->ToString();
-}

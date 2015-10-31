@@ -10,3 +10,4 @@
 #include "Tang.h"
 #include "Cotang.h"
 #include "NLog.h"
+#include "Power.h"
